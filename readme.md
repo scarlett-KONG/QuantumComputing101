@@ -13,9 +13,9 @@ The repository **is going to be organized** into the following sections:
 
 ## Material Recommendation:
 
-中文教程梳理， 非常推荐！ https://github.com/XinjianOUYANG/Quantum_Physics
-IBM Quantum Learning https://learning.quantum.ibm.com/catalog/tutorials
-Concepts https://quantumzeitgeist.com/quantum-computing-101/
-Qiskit https://www.ibm.com/quantum/qiskit
-Introduction to Coding Quantum Algorithm: A tutorial Series Using Qiskit https://arxiv.org/pdf/1903.04359
+- [中文教程梳理， 非常推荐！](https://github.com/XinjianOUYANG/Quantum_Physics)
+- [IBM Quantum Learning](https://learning.quantum.ibm.com/catalog/tutorials)
+- [Concepts](https://quantumzeitgeist.com/quantum-computing-101/)
+- [Qiskit](https://www.ibm.com/quantum/qiskit)
+- [Introduction to Coding Quantum Algorithm: A tutorial Series Using Qiskit](https://arxiv.org/pdf/1903.04359)
 
