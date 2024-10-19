@@ -35,3 +35,7 @@ What Qiskit is, what primitives are, and how we can use them to create and execu
 
 The typical workflow we follow to run experiments at scale. This includes selecting the best primitives for your use-case, mapping a problem to a quantum circuit, and applying error mitigation and suppression, which enable us to squeeze as much power out of these machines as possible."
 
+## Performance metrics for Processor
+
+Each processor lists three performance metrics, which we discussed in the previous lesson, but as a reminder, they are: qubit count, EPLG, and CLOPS.
+
