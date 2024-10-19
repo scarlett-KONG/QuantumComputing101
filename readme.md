@@ -4,12 +4,43 @@ This repository aims to provide resources and practical projects to support begi
 
 It covers fundamental concepts, practical applications, and hands-on coding exercises to build a solid foundation in the field.
 
-The repository **is going to be organized** into the following sections:
+Quantum Science could be divided into following areas:
 
-1. Physics: An introduction to the essential physics concepts that underpin quantum computing, such as quantum mechanics and linear algebra.
-2. Quantum Computer Science: A focus on the theoretical aspects of quantum computing, including quantum algorithms and complexity theory.
-3. Quantum Information: An exploration of how information is represented and processed in quantum systems, with topics like qubits, entanglement, and quantum cryptography.
-4. Hands-On Coding Projects: Practical coding exercises and projects to implement quantum algorithms using popular quantum computing frameworks, such as Qiskit or Cirq.
+<font face="Time New Roman", size=5>
+- Quantum Hardware
+    How are qubits physically implemented?
+
+- Quantum Software
+    How do I program the quantum computers?
+
+- Quantum Algorithm
+    What can quantum computers do better than classical computers?
+
+- Quantum Computer Architecture
+    What happens between the hardware and software of a quantum computer?
+
+- Quantum Error Correction
+    How can errors in quantum computation be corrected?
+
+- Quantum Cryptography
+    What could cryptography look like in a future with quantum codebreaking?
+
+- Quantum Communication
+    How is quantum communication more secure?
+
+- Quantum Machine Learning
+    How can quantum computing help analyze and learn from data?
+
+- Quantum Sensing
+    How can quantum technology enhance sensors used in our day-to-day lives?
+
+- Quantum Chemistry
+    What makes chemistry one of the most anticipated applications of quantum computing?
+
+-Quantum Game
+    How can I play and make games about quantum science and computing?
+
+</font>
 
 ## Material Recommendation:
 
