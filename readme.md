@@ -6,41 +6,43 @@ It covers fundamental concepts, practical applications, and hands-on coding exer
 
 Quantum Science could be divided into following areas:
 
-<font face="Time New Roman", size=5>
-- Quantum Hardware
+<font size="3">
+
+- **Quantum Hardware**  
     How are qubits physically implemented?
 
-- Quantum Software
+- **Quantum Software**  
     How do I program the quantum computers?
 
-- Quantum Algorithm
+- **Quantum Algorithm**  
     What can quantum computers do better than classical computers?
 
-- Quantum Computer Architecture
+- **Quantum Computer Architecture**  
     What happens between the hardware and software of a quantum computer?
 
-- Quantum Error Correction
+- **Quantum Error Correction**  
     How can errors in quantum computation be corrected?
 
-- Quantum Cryptography
+- **Quantum Cryptography**  
     What could cryptography look like in a future with quantum codebreaking?
 
-- Quantum Communication
+- **Quantum Communication**  
     How is quantum communication more secure?
 
-- Quantum Machine Learning
+- **Quantum Machine Learning**  
     How can quantum computing help analyze and learn from data?
 
-- Quantum Sensing
+- **Quantum Sensing**  
     How can quantum technology enhance sensors used in our day-to-day lives?
 
-- Quantum Chemistry
+- **Quantum Chemistry**  
     What makes chemistry one of the most anticipated applications of quantum computing?
 
--Quantum Game
+- **Quantum Game**  
     How can I play and make games about quantum science and computing?
-
 </font>
+
+Refered from [Full-Stack Quantum Computation](https://fullstackquantumcomputation.tech/#top)
 
 ## Material Recommendation:
 
@@ -49,4 +51,6 @@ Quantum Science could be divided into following areas:
 - [Concepts](https://quantumzeitgeist.com/quantum-computing-101/)
 - [Qiskit](https://www.ibm.com/quantum/qiskit)
 - [Introduction to Coding Quantum Algorithm: A tutorial Series Using Qiskit](https://arxiv.org/pdf/1903.04359)
+- [Full-Stack Quantum Computation](https://fullstackquantumcomputation.tech/#top)
+
 
