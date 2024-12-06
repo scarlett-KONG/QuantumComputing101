@@ -44,6 +44,15 @@ Quantum Science could be divided into following areas:
 
 Refered from [Full-Stack Quantum Computation](https://fullstackquantumcomputation.tech/#top)
 
+A series of tutorial:
+
+Deutsch-doszn algorithm
+
+Grover's algorithm
+
+Shor's Algorithm
+
+
 ## Material Recommendation:
 
 - [中文教程梳理， 非常推荐！](https://github.com/XinjianOUYANG/Quantum_Physics)
@@ -53,4 +62,8 @@ Refered from [Full-Stack Quantum Computation](https://fullstackquantumcomputatio
 - [Introduction to Coding Quantum Algorithm: A tutorial Series Using Qiskit](https://arxiv.org/pdf/1903.04359)
 - [Full-Stack Quantum Computation](https://fullstackquantumcomputation.tech/#top)
 
+These two libareries or for the the quantum algoritms
 
+- [Pennylane Glossary](https://pennylane.ai/qml/glossary)
+
+- [Google Cirq Experiments](https://quantumai.google/cirq/experiments/textbook_algorithms)
