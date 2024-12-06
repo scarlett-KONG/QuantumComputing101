@@ -1,34 +1,53 @@
-import numpy as np
-from qiskit import QuantumCircuit
-
-# 1. A quantum circuit for preparing the quantum state |000> + i |111>
-qc_example = QuantumCircuit(3)
-qc_example.h(0)          # generate superpostion
-qc_example.p(np.pi/2,0)  # add quantum phase
-qc_example.cx(0,1)       # 0th-qubit-Controlled-NOT gate on 1st qubit
-qc_example.cx(0,2)       # 0th-qubit-Controlled-NOT gate on 2nd qubit
-
-# 2. Add the classical output in the form of measurement of all qubits
-qc_measured = qc_example.measure_all(inplace=False)
-
-# 3. Execute using the Sampler primitive
-from qiskit.primitives import StatevectorSampler
-sampler = StatevectorSampler()
-job = sampler.run([qc_measured], shots=1000)
-result = job.result()
-print(f" > Counts: {result[0].meas.get_counts()}")
-
-# 2. Define the observable to be measured 
-from qiskit.quantum_info import SparsePauliOp
-operator = SparsePauliOp.from_list([("XXY", 1), ("XYX", 1), ("YXX", 1), ("YYY", -1)])
-
-# 3. Execute using the Estimator primitive
-from qiskit.primitives import StatevectorEstimator
-estimator = StatevectorEstimator()
-job = estimator.run([(qc_example, operator)], precision=1e-3)
-result = job.result()
-print(f" > Expectation values: {result[0].data.evs}")
-
-from qiskit import transpile
-qc_transpiled = transpile(qc_example, basis_gates = ['cz', 'sx', 'rz'], coupling_map =[[0, 1], [1, 2]] , optimization_level=3)
-
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "ModuleNotFoundError",
+     "evalue": "No module named 'qiskit'",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[0;31mModuleNotFoundError\u001b[0m                       Traceback (most recent call last)",
+      "Cell \u001b[0;32mIn[1], line 2\u001b[0m\n\u001b[1;32m      1\u001b[0m \u001b[38;5;28;01mimport\u001b[39;00m \u001b[38;5;21;01mnumpy\u001b[39;00m \u001b[38;5;28;01mas\u001b[39;00m \u001b[38;5;21;01mnp\u001b[39;00m \n\u001b[0;32m----> 2\u001b[0m \u001b[38;5;28;01mfrom\u001b[39;00m \u001b[38;5;21;01mqiskit\u001b[39;00m \u001b[38;5;28;01mimport\u001b[39;00m QuantumCircuit\n\u001b[1;32m      4\u001b[0m qc_example \u001b[38;5;241m=\u001b[39m  QuantumCircuit(\u001b[38;5;241m3\u001b[39m)\n\u001b[1;32m      5\u001b[0m qc_example\u001b[38;5;241m.\u001b[39mh(\u001b[38;5;241m0\u001b[39m)\n",
+      "\u001b[0;31mModuleNotFoundError\u001b[0m: No module named 'qiskit'"
+     ]
+    }
+   ],
+   "source": [
+    "import numpy as np \n",
+    "from qiskit import QuantumCircuit\n",
+    "\n",
+    "qc_example =  QuantumCircuit(3)\n",
+    "qc_example.h(0)\n",
+    "qc_example.p(np.pi/2,0)\n",
+    "qc_example.cx(0,1)\n",
+    "qc_example.cx(1,2)"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "quantum",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.9.10"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2
+}
